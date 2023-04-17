@@ -29,7 +29,7 @@ Image here.
 - 9x Skhynix H5TC4G83BFR 8-bit 4Gb DDR3L, 72-bit bus (64 bit + ECC)
 - PCIe Gen3 x16 (logically 2x bifurcated x8)
 
-Find the complete bill of material (here)[BOM.md]
+Find the complete bill of material (here)[/BOM.md]
 
 ## Included repos
 

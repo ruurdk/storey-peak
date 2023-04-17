@@ -1,4 +1,4 @@
-## BOM
+# BOM
 
 Part number for this board: 
 - X930613-001 (Microsoft OEM p/n)
