@@ -11,11 +11,11 @@ There is a body of knowledge around the MSFT Azure Storey Peak boards which can 
 
 In this repo, I collect the different sources available online and add some of my own code that makes this all work on Windows.
 
-There is a blog to support this repo on getting started quickly [here](todo).
+There is a blog to support this repo on getting started quickly (here)[https://devops.lol/azure-fpga].
 
 ## Online sources
 
-- the central piece that got me started was the blog series by (Jan Marjanovic)[https://j-marjanovic.io/stratix-v-accelerator-card-from-ebay.html], starting around the Open CloudServer (OCS) form factor 'Pikes peak' which is essentially the same - just not with SAMTEC but PCIe connector.
+- the central piece that got me started was the (blog series)[[https://j-marjanovic.io/stratix-v-accelerator-card-from-ebay.html]] by (Jan Marjanovic)[https://twitter.com/janmarjanovic], starting around the Open CloudServer (OCS) form factor 'Pikes peak' which is essentially the same - just not with SAMTEC but PCIe connector.
 - PDF describing MSFT's [journey with FPGAs](https://indico.fnal.gov/event/22303/contributions/246438/attachments/157852/206736/Catapult_Putnam_Snowmass_2022_FPGA_Cloud__for_HPC.pdf). The board here is part of Catapult v2 (yes they go up to v3 and (further)[https://github.com/tow3rs/catapult-v3-smartnic-re/issues/2])
 - overview of the OCS part by (wirebond)[https://github.com/wirebond/catapult_v2_pikes_peak]
 - overview by (@occamlab)[http://virtlab.occamlab.com/home/zapisnik/microsoft-catapult-v2]
