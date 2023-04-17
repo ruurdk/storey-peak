@@ -1,0 +1,3 @@
+[submodule "sv_second_pcie_hip"]
+	path = sv_second_pcie_hip
+	url = https://github.com/ruurdk/sv_second_pcie_hip

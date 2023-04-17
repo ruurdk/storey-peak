@@ -7,19 +7,33 @@ Getting started with production grade high-end FPGA devices is usually either ex
 
 There is a body of knowledge around the MSFT Azure Storey Peak boards which can be bought online for $80.
 
+Image here.
+
 In this repo, I collect the different sources available online and add some of my own code that makes this all work on Windows.
 
 There is a blog to support this repo on getting started quickly [here](todo).
 
 ## Online sources
 
-- the central piece that got me started was the blog series by (Jan Marjanovic)[https://j-marjanovic.io/stratix-v-accelerator-card-from-ebay.html], starting around the OCS form factor 'Pikes peak' which is essentially the same - just not with SAMTEC but PCIe connector.
+- the central piece that got me started was the blog series by (Jan Marjanovic)[https://j-marjanovic.io/stratix-v-accelerator-card-from-ebay.html], starting around the Open CloudServer (OCS) form factor 'Pikes peak' which is essentially the same - just not with SAMTEC but PCIe connector.
 - PDF describing MSFT's [journey with FPGAs](https://indico.fnal.gov/event/22303/contributions/246438/attachments/157852/206736/Catapult_Putnam_Snowmass_2022_FPGA_Cloud__for_HPC.pdf). The board here is part of Catapult v2 (yes they go up to v3 and (further)[https://github.com/tow3rs/catapult-v3-smartnic-re/issues/2])
-- overview by (Rombik)[http://virtlab.occamlab.com/home/zapisnik/microsoft-catapult-v2]
+- overview of the OCS part by (wirebond)[https://github.com/wirebond/catapult_v2_pikes_peak]
+- overview by (@occamlab)[http://virtlab.occamlab.com/home/zapisnik/microsoft-catapult-v2]
 
 ## Architecture and features
 
+Image here.
+
+- Intel Stratix V GS (DSP-optimized), p/n 5SGSKF40I3LNAC (*see note 1)
+- 2x QSFP 40G cages
+- 9x Skhynix H5TC4G83BFR 8-bit 4Gb DDR3L, 72-bit bus (64 bit + ECC)
+- PCIe Gen3 x16 (logically 2x bifurcated x8)
+
 ## BOM
+
+Part number for this board: 
+- X930613-001 (Microsoft OEM p/n)
+- 861309-001 Rev B (HP p/n)
 
 The main ICs on the board:
 
@@ -34,7 +48,30 @@ The main ICs on the board:
 | U16 | 4128BWP | ST | 128-kbit serial EEPROM | 0x51h |
 | U46,48,50,52,54,56,58,60,64 | HSTC4G83BFR | SKhynix | 4-Gbit 1.35V DDR3L SDRAM | N/A |
 | U74  | P617A | NXT | Level translating Fm+ I2C-bus repeater | no bus address |
+| U75 | L57 | TI | TS3USB221 USB 2.0 1:2 mux/demux switch with single enable | N/A |
+| U77,78 | WR1 61 | ?ESD protection diode? | N/A |
 
+Unknown I2C 0x41h address responder.
+
+Oscillators:
+
+| Silkscreen | Identifier | Mnfg. | Frequency |
+| --- | --- | --- | --- |
+| OSC2 | DCpA3 | TXC | 125Mhz |
+| OSC3/U4 | IDT8N4Q001 | Renesas | programmable (644.53125 MHz default) | 
+| Y1 (near FT232H) | 12.000 623L | ?? | 12Mhz? | 
+
+Headers, connectors and jumpers:
+
+| Silkscreen | Function | Link |
+| --- | --- | --- |
+| J3 | USB (internal) | |
+| J5 | JTAG | |
+| J4 | PCIe x16 (2x x8 bifurcated to hard IPs) | |
+| JP1 | jumpers - but for what? | |
+| CN1 | USB (external) | |
+| XCVR1 + U63 | QSFP SFF-8636 40Gbit transceiver | I2C 0x50h when inserted (seperate bus) |
+| XCVR2 + U64 | QSFP SFF-8636 40Gbit transceiver | I2C 0x50h when inserted (seperate bus) |
 
 Power parts:
 
@@ -46,45 +83,17 @@ Power parts:
 | PU10,16 | EN2342QI | Intel | EN2342QI 4A PowerSOC DC-DC switching converter |
 | PU12 | s1010 | Intel | ES1010SI 12V Hot-swap Power distribution controller |
 | PU13 | Y1602A | Intel | EY1602 40V 50mA linear regulator |
-| PU17 | 70H | ?? | |
-
-
-Oscillators:
-
-| Silkscreen | Identifier | Mnfg. | Frequency |
-| --- | --- | --- | --- |
-| OSC2 | DCpA3 | TXC | 125Mhz |
-| OSC3/U4 | IDT8N4Q001 | Renesas | programmable (644.53125 MHz default) | 
-| Y1 (near FT232H) | 12.000 623L | ?? | 12Mhz? | 
-
-
-Headers, connectors and jumpers:
-
-| Silkscreen | Function | Link |
-| --- | --- | --- |
-| J3 | USB? | |
-| J5 | JTAG | |
-| J4 | PCIe x16 (2x x8) | |
-| JP1 | jumpers - but for what? | |
-| CN1 | USB | |
-| XCVR1 + U63 | QSFP 40Gbit | |
-| XCVR2 + U64 | QSFP 40Gbit | |
-
-
 
 Unknown:
+
 | Silkscreen | Identifier | 
 | --- | --- |
-|  | AUPPK U610 | 
+| ?? | AUPK U610 (near NOR flash) 16 pin| 
 | U38 (back) | |
 | U65 | F DG06A |
-| U73 | MX 6 (near PCIe) |
-| U75 | L57 (near USB) |
-| U77 | WR1 61 |
-| U78 | WR1 61 | 
-| Q12 | F ACO6AS FDMS 0310AS |
+| U73 | MX 6 (near PCIe) 6 pin |
+| PU17 | 70H | ?? | |
 
-Unknown I2C 0x41h address responder.
 
 ## Included repos
 
