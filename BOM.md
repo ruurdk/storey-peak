@@ -47,7 +47,7 @@ Power parts:
 | Silkscreen | Identifier | Mnfg. | Function |
 | --- | --- | --- | --- |
 | PU 1 | 7100 | Intel | EC7100VQI PWM DC/DC Controller with VS inputs for FPGA power regulator |
-| PU3, 5, 7 | 2120 F551KS 1551 | Intel | ER2120QI 2A synchronous buck regulator |
+| PU3, 5, 7 | 2120 | Intel | ER2120QI 2A synchronous buck regulator |
 | PU8 | 3105 | Intel | ER2105DI 500mA wide V_in Synchronous Buck regulator |
 | PU10,16 | EN2342QI | Intel | EN2342QI 4A PowerSOC DC-DC switching converter |
 | PU12 | s1010 | Intel | ES1010SI 12V Hot-swap Power distribution controller |

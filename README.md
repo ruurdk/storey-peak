@@ -5,7 +5,7 @@ Collected resources and getting started with Azure PCIe FPGA device
 
 Getting started with production grade high-end FPGA devices is usually either extremely expensive (with official dev kits) or daunting (using refurbished hardware). This makes it prohibitive to start as a hobbyist.
 
-There is a body of knowledge around the MSFT Azure Storey Peak boards which can be bought online for $80.
+There is a body of knowledge around the MSFT Azure Storey Peak boards which can be bought online for $80, and is an excellent all-round high-end FPGA board (PCIe, SDRAM, QSFP+, etc.) albeit from around 2015 or so.
 
 ![eBay ad for board](eBay-storey-peak.png?raw=true)
 

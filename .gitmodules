@@ -10,3 +10,6 @@
 [submodule "pp-sp-reference-design"]
 	path = pp-sp-reference-design
 	url = https://github.com/ruurdk/pp-sp-reference-design
+[submodule "catapult_v2_pikes_peak"]
+	path = catapult_v2_pikes_peak
+	url = https://github.com/ruurdk/catapult_v2_pikes_peak
