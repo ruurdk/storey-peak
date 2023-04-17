@@ -24,7 +24,7 @@ There is a blog to support this repo on getting started quickly [here](todo).
 The main ICs on the board:
 
 | Silkscreen | Identifier | Mnfg. | Function | I2C address |
-| -- | ---- | --- | --- | --- | --- |
+| -- | ---- | --- | --- | --- |
 | U1 | Stratix V GS | Altera/Intel | FPGA | N/A |
 | U2 | 25Q256A 83C40 | Micron | 256-Mbit Serial NOR Flash Memory | N/A |
 | U3 | FT232H | FTDI | Single channel HiSpeed USB to Multipurpose UART/FIFO | N/A |
@@ -37,26 +37,29 @@ The main ICs on the board:
 
 
 Power parts:
+
 | Silkscreen | Identifier | Mnfg. | Function |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | PU 1 | 7100 | Intel | EC7100VQI PWM DC/DC Controller with VS inputs for FPGA power regulator |
 | PU3, 5, 7 | 2120 F551KS 1551 | Intel | ER2120QI 2A synchronous buck regulator |
 | PU8 | 3105 | Intel | ER2105DI 500mA wide V_in Synchronous Buck regulator |
 | PU10,16 | EN2342QI | Intel | EN2342QI 4A PowerSOC DC-DC switching converter |
 | PU12 | s1010 | Intel | ES1010SI 12V Hot-swap Power distribution controller |
 | PU13 | Y1602A | Intel | EY1602 40V 50mA linear regulator |
-| PU17 | 70H | ?? |
+| PU17 | 70H | ?? | |
 
 
 Oscillators:
+
 | Silkscreen | Identifier | Mnfg. | Frequency |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | OSC2 | DCpA3 | TXC | 125Mhz |
 | OSC3/U4 | IDT8N4Q001 | Renesas | programmable (644.53125 MHz default) | 
 | Y1 (near FT232H) | 12.000 623L | ?? | 12Mhz? | 
 
 
 Headers, connectors and jumpers:
+
 | Silkscreen | Function | Link |
 | --- | --- | --- |
 | J3 | USB? | |
