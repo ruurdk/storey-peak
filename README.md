@@ -49,7 +49,7 @@ The main ICs on the board:
 | U46,48,50,52,54,56,58,60,64 | HSTC4G83BFR | SKhynix | 4-Gbit 1.35V DDR3L SDRAM | N/A |
 | U74  | P617A | NXT | Level translating Fm+ I2C-bus repeater | no bus address |
 | U75 | L57 | TI | TS3USB221 USB 2.0 1:2 mux/demux switch with single enable | N/A |
-| U77,78 | WR1 61 | ?ESD protection diode? | N/A |
+| U77,78 | WR1 61 | ?? | ESD protection diode | N/A |
 
 Unknown I2C 0x41h address responder.
 
@@ -59,11 +59,11 @@ Oscillators:
 | --- | --- | --- | --- |
 | OSC2 | DCpA3 | TXC | 125Mhz |
 | OSC3/U4 | IDT8N4Q001 | Renesas | programmable (644.53125 MHz default) | 
-| Y1 (near FT232H) | 12.000 623L | ?? | 12Mhz? | 
+| Y1 | 12.000 623L | ?? | 12Mhz? | 
 
 Headers, connectors and jumpers:
 
-| Silkscreen | Function | Link |
+| Silkscreen | Function | Extra info |
 | --- | --- | --- |
 | J3 | USB (internal) | |
 | J5 | JTAG | |
@@ -97,6 +97,10 @@ Unknown:
 
 ## Included repos
 
-- 
+- jtag-quartus-ft232h - JTAG library for FT232H on Quartus *Linux*
+- todo: jtag-quartus-ft232h - same for Windows
+- sv_second_ip - how to enable 2nd PCIe hard ip on Quartus *Linux*
+- todo: sv_second_ip_win - same for Windows
+
 
 ## Pins/connections

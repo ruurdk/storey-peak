@@ -1,3 +1,12 @@
 [submodule "sv_second_pcie_hip"]
 	path = sv_second_pcie_hip
 	url = https://github.com/ruurdk/sv_second_pcie_hip
+[submodule "jtag-quartus-ft232h"]
+	path = jtag-quartus-ft232h
+	url = https://github.com/ruurdk/jtag-quartus-ft232h
+[submodule "otma-pin-re"]
+	path = otma-pin-re
+	url = https://github.com/ruurdk/otma-pin-re
+[submodule "pp-sp-reference-design"]
+	path = pp-sp-reference-design
+	url = https://github.com/ruurdk/pp-sp-reference-design
