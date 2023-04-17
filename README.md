@@ -7,7 +7,7 @@ Getting started with production grade high-end FPGA devices is usually either ex
 
 There is a body of knowledge around the MSFT Azure Storey Peak boards which can be bought online for $80.
 
-Image here.
+!(eBay ad of storey peak board)[eBay-storey-peak.png "eBay ad of Storey Peak board"]
 
 In this repo, I collect the different sources available online and add some of my own code that makes this all work on Windows.
 
