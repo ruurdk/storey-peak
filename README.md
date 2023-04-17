@@ -97,10 +97,18 @@ Unknown:
 
 ## Included repos
 
+### Setting up Quartus for this board
+
 - jtag-quartus-ft232h - JTAG library for FT232H on Quartus *Linux*
-- todo: jtag-quartus-ft232h - same for Windows
+- *todo*: jtag-quartus-ft232h - same for Windows
+
 - sv_second_ip - how to enable 2nd PCIe hard ip on Quartus *Linux*
-- todo: sv_second_ip_win - same for Windows
+- *todo*: sv_second_ip_win - same for Windows
 
+### Main project
 
-## Pins/connections
+- pp-sp-reference-design - the main project for getting started
+
+### Pins/connections
+
+- otma-pin-re - pin configuration reverse engineering project based on factory FW
