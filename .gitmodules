@@ -16,3 +16,6 @@
 [submodule "jtag-quartus-ft323h-windows"]
 	path = jtag-quartus-ft323h-windows
 	url = https://github.com/ruurdk/jtag-quartus-ft323h-windows
+[submodule "sv_second_pcie_hip_windows"]
+	path = sv_second_pcie_hip_windows
+	url = https://github.com/ruurdk/sv_second_pcie_hip_windows

@@ -42,7 +42,7 @@ Find the complete bill of material [here](BOM.md)
 - jtag-quartus-ft232h-windows - JTAG library for FT323H on Quartus *Windows*
 
 - sv_second_ip - how to enable 2nd PCIe hard ip on Quartus *Linux*
-- *todo*: sv_second_ip_win - same for Windows
+- sv_second_ip_windows - same for Quartus *Windows*
 
 ### Main project
 
