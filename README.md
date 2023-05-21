@@ -39,7 +39,7 @@ Find the complete bill of material [here](BOM.md)
 ### Setting up Quartus for this board
 
 - jtag-quartus-ft232h - JTAG library for FT232H on Quartus *Linux*
-- *todo*: jtag-quartus-ft232h - same for Windows
+- jtag-quartus-ft232h-windows - JTAG library for FT323H on Quartus *Windows*
 
 - sv_second_ip - how to enable 2nd PCIe hard ip on Quartus *Linux*
 - *todo*: sv_second_ip_win - same for Windows
