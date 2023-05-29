@@ -51,4 +51,5 @@ Find the complete bill of material [here](BOM.md)
 ### RE project
 
 - otma-pin-re - pin configuration reverse engineering project based on factory FW
-- catapult-pikes-peak - contains among others the factory firmware
+- catapult-pikes-peak - contains among others the factory firmware as extracted by @wirebond
+- firmware - contains the factory firmware as extracted by me
