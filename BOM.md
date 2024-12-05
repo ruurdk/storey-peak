@@ -15,12 +15,11 @@ The main ICs on the board:
 | U5 | T411 | Texas Instruments | Remote and local temperature sensor | 0x4Ch |
 | U9 | PI6CEQ200 | Pericom | PCIe Gen2/Gen3 buffer | 0x6ah |
 | U16 | 4128BWP | ST | 128-kbit serial EEPROM | 0x51h |
+| U38 | INA219 | Texas Instruments | current shunt and power monitor | 0x41h |
 | U46,48,50,52,54,56,58,60,64 | HSTC4G83BFR | SKhynix | 4-Gbit 1.35V DDR3L SDRAM | N/A |
 | U74  | P617A | NXT | Level translating Fm+ I2C-bus repeater | no bus address |
 | U75 | L57 | TI | TS3USB221 USB 2.0 1:2 mux/demux switch with single enable | N/A |
 | U77,78 | WR1 61 | ?? | ESD protection diode | N/A |
-
-Unknown I2C 0x41h address responder.
 
 Oscillators:
 
